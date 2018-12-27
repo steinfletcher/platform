@@ -1,0 +1,34 @@
+{
+  "name": "identity",
+  "type": "server",
+  "profile": "personal",
+  "regions": [
+    "eu-west-1"
+  ],
+  "error_pages": {
+    "disable": true
+  },
+  "proxy": {
+    "timeout": 5
+  },
+  "stages": {
+    "staging": {
+      "domain": "identity.stein.systems"
+    },
+    "production": {
+      "domain": "identity.damnyouth.com"
+    }
+  },
+  "lambda": {
+    "policy": [
+      {
+        "Effect": "Allow",
+        "Resource": "*",
+        "Action": [
+          "rds:*",
+          "cloudfront:UpdateDistribution"
+        ]
+      }
+    ]
+  }
+}

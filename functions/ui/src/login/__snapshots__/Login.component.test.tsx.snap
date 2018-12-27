@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm should render 1`] = `
+<ForwardRef(Bootstrap(Form))
+  onSubmit={[Function]}
+>
+  <ForwardRef(Bootstrap(FormGroup))
+    controlId="formBasicUsername"
+  >
+    <ForwardRef(ContextTransform)>
+      Username
+    </ForwardRef(ContextTransform)>
+    <ForwardRef(ContextTransform)
+      defaultValue="a@b.com"
+      onChange={[Function]}
+      placeholder="Enter username"
+      type="text"
+    />
+  </ForwardRef(Bootstrap(FormGroup))>
+  <ForwardRef(Bootstrap(FormGroup))
+    controlId="formBasicPassword"
+  >
+    <ForwardRef(ContextTransform)>
+      Password
+    </ForwardRef(ContextTransform)>
+    <ForwardRef(ContextTransform)
+      defaultValue="Password123"
+      onChange={[Function]}
+      placeholder="Password"
+      type="password"
+    />
+  </ForwardRef(Bootstrap(FormGroup))>
+  <ForwardRef(Bootstrap(Button))
+    data-test-id="submitBtn"
+    disabled={false}
+    type="submit"
+    variant="primary"
+  >
+    Submit
+  </ForwardRef(Bootstrap(Button))>
+</ForwardRef(Bootstrap(Form))>
+`;

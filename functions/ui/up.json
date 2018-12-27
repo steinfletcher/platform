@@ -1,0 +1,29 @@
+{
+  "name": "ui",
+  "type": "static",
+  "profile": "personal",
+  "static": {
+    "dir": "build"
+  },
+  "lambda": {
+    "memory": 1024
+  },
+  "redirects": {
+    "/*": {
+      "location": "/",
+      "status": 200
+    }
+  },
+  "hooks": {
+    "build": "npm run build",
+    "clean": "rm -fr build"
+  },
+  "stages": {
+    "staging": {
+      "domain": "stein.systems"
+    },
+    "production": {
+      "domain": "damnyouth.com"
+    }
+  }
+}
